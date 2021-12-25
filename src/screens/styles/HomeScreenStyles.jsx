@@ -1,14 +1,11 @@
 import styled from 'styled-components';
 
 export const MainTextContainer = styled.div`
-    margin-top: 15vh;
+    margin-top: 14vh;
     @media screen and (min-width: 1024px) {
-        margin-bottom: 90px;
-        margin-top: 0;
-        margin-left: 15vw;
-    }
-    @media screen and (min-width: 1600px) {
         margin-bottom: 120px;
+        margin-top: 0;
+        margin-left: 10vw;
     }
 `;
 
@@ -35,16 +32,15 @@ export const FirstContainer = styled.section`
     min-height: calc(100vh - 60px);
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: start;
+    align-items: start;
+    justify-content: center;
     position: relative;
-    flex-direction: column;
     @media screen and (min-width: 768px) {
         min-height: calc(100vh - 90px);
     }
     @media screen and (min-width: 1024px) {
-        justify-content: center;
-        align-items: start;
+        justify-content: start;
+        align-items: center;
     }
     @media screen and (min-width: 1600px) {
         min-height: calc(100vh - 120px);
@@ -104,6 +100,14 @@ export const ContentText = styled.p`
 `;
 
 export const MainText = styled.h1`
+    font-size: clamp(1rem, 7.5vw, 20rem);
+    text-transform: none;
+    font-weight: 600;
+    @media screen and (min-width: 1024px) {
+        font-size: clamp(3rem, 5.5vw, 5.5rem);
+    }
+`;
+export const SecondaryText = styled.h1`
     font-size: clamp(1rem, 7.1vw, 3.3rem);
     text-transform: none;
     font-weight: 600;
@@ -115,6 +119,6 @@ export const MainText = styled.h1`
         }
     }
     @media screen and (min-width: 1024px) {
-        font-size: clamp(3rem, 6.5vw, 10rem);
+        font-size: clamp(3rem, 4vw, 10rem);
     }
 `;

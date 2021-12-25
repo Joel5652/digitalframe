@@ -12,6 +12,7 @@ import {
     Content,
     ContentArrow,
     ContentText,
+    SecondaryText,
 } from './styles/HomeScreenStyles';
 import { appendScript } from '../functions/AppendScript';
 
@@ -25,10 +26,8 @@ class HomeScreen extends Component {
                 <NavBar />
                 <FirstContainer>
                     <MainTextContainer>
-                        <MainText>
-                            DIGITAL <br></br> FRAME
-                        </MainText>
-                        <TextArrow Styles={{ marginTop: 25 }} />
+                        <MainText>DIGITAL FRAME</MainText>
+                        <TextArrow />
                         <div className='console-container'>
                             <SmallText id='text'></SmallText>
                             <div className='console-underscore' id='console'>
@@ -46,7 +45,7 @@ class HomeScreen extends Component {
 
                 <UseableContainer id='section2'>
                     <Content>
-                        <MainText>The Product.</MainText>
+                        <SecondaryText>The Product</SecondaryText>
                         <ContentText>
                             The computer building kits were designed to inovate
                             the current market of over priced pre-built

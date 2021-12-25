@@ -22,7 +22,7 @@ function TextArrow({ Styles }) {
     if (Window < 400) {
         Size = 8;
     } else if (Window > 1440) {
-        Size = 18;
+        Size = 14;
     } else {
         Size = 10;
     }

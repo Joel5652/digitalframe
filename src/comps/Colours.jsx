@@ -5,5 +5,6 @@ const Colours = {
     LightGrey: '#EDEDED',
     DarkGrey: '#444',
     Accent: '#699cfe',
+    Button: '#111111',
 };
 export default Colours;

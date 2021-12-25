@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import BurgerMenu from './BurgerMenu';
-import Colours from './Colours';
 import {
     NavBarDiv,
     Heading,

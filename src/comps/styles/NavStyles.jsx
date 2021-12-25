@@ -91,7 +91,8 @@ export const DropDownLink = styled.a`
 export const Heading = styled.h1`
     position: relative;
     z-index: 2;
-    font-size: clamp(16px, 2vw, 1.8rem);
+    font-weight: 600;
+    font-size: clamp(16px, 1.8vw, 1.8rem);
     position: absolute;
     left: 30px;
     @media screen and (min-width: 768px) {
@@ -116,24 +117,10 @@ export const DesktopMenu = styled.div`
 export const NavLink = styled.a`
     position: relative;
     font-size: clamp(14px, 1vw, 16px);
-    transition: all 200ms ease-in;
+    transition: all 300ms ease-in;
     font-weight: 500;
-    &:after {
-        content: '';
-        position: absolute;
-        width: 0%;
-        height: 1.5px;
-        background-color: white;
-        left: 50%;
-        bottom: -6px;
-        transition: all 400ms ease-in-out;
-    }
-
     &:hover {
-        &:after {
-            width: 100%;
-            left: 0%;
-        }
+        color: orange;
     }
 `;
 export const ButtonLink = styled.a`
@@ -175,7 +162,7 @@ export const RoundedButton = styled.span`
         cursor: pointer;
         overflow: hidden;
         right: 60px;
-        background-color: ${Colours.Dark};
+        background-color: ${Colours.Button};
         color: ${Colours.Light};
         transition: all 700ms ease;
         &:hover {
