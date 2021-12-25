@@ -12,7 +12,6 @@ import {
     Content,
     ContentArrow,
     ContentText,
-    ContentImage,
 } from './styles/HomeScreenStyles';
 import { appendScript } from '../functions/AppendScript';
 
@@ -70,10 +69,6 @@ class HomeScreen extends Component {
                     </Content>
                     <ScrollDown Styles={{ left: 0, bottom: 0 }} />
                 </UseableContainer>
-                {/* <UseableContainer>
-                    <ContentImage src='https://source.unsplash.com/random' />
-                    <ScrollDown Styles={{ left: 0, bottom: 0 }} />
-                </UseableContainer> */}
             </>
         );
     }

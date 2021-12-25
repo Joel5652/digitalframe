@@ -25,23 +25,13 @@ class NavBar extends Component {
     };
 
     render() {
-        let Button;
-        let Theme;
-
         const { Light } = this.props;
 
-        if (Light) {
-            Theme = {
-                Colour: `${Colours.Light}`,
-            };
-            // Button = Theme.Img;
-        } else {
-            Button = (
-                <RoundedButton>
-                    <ButtonLink>Contact</ButtonLink>
-                </RoundedButton>
-            );
-        }
+        let Button = (
+            <RoundedButton>
+                <ButtonLink>Contact</ButtonLink>
+            </RoundedButton>
+        );
 
         return (
             <>
