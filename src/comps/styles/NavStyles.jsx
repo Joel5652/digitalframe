@@ -116,9 +116,10 @@ export const DesktopMenu = styled.div`
 
 export const NavLink = styled.a`
     position: relative;
-    font-size: clamp(14px, 1vw, 16px);
+    font-size: clamp(14px, 2vw, 16px);
     transition: all 300ms ease-in;
-    font-weight: 500;
+    font-weight: 400;
+    position: relative;
     &:hover {
         color: orange;
     }
@@ -145,7 +146,7 @@ export const ButtonLink = styled.a`
         color: ${Colours.Dark};
         transform: scale(1.1);
         &:after {
-            color: ${Colours.Light};
+            color: orange;
             transform: scale(1, 1);
         }
     }
@@ -166,7 +167,7 @@ export const RoundedButton = styled.span`
         color: ${Colours.Light};
         transition: all 700ms ease;
         &:hover {
-            border: 1px solid ${Colours.Light};
+            border: 1px solid orange;
         }
     }
 `;

@@ -20,7 +20,7 @@ function BackgroundSVG(props) {
                     />
                     <path
                         id='prefix__Surface'
-                        fill='#090909'
+                        fill='#080808'
                         d='M909 1098V178.67L0 637l909 461z'
                     />
                     <path
