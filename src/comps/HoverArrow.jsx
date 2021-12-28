@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from '../styles/HoverArrowStyles';
+import { Container } from './styles/HoverArrowStyles';
 
 const HoverArrow = ({ style, size, color, degree }) => {
     return (

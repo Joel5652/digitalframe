@@ -1,5 +1,5 @@
 import React from 'react';
-import HoverArrow from './common/HoverArrow';
+import HoverArrow from './HoverArrow';
 import { Container } from './styles/ScrollDownStyles';
 
 function ScrollDown({ href, Styles }) {

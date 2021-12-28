@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from '../styles/StraightArrowStyles';
+import { Container } from './styles/StraightArrowStyles';
 
 const StraightArrow = ({ style, size, color, degree }) => {
     return (

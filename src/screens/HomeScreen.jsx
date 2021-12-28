@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
-import BackgroundSVG from '../comps/BackgroundSVG';
+import BackgroundSVG from '../comps/SVGs/BackgroundSVG';
 import NavBar from '../comps/NavBar';
 import ScrollDown from '../comps/ScrollDown';
 import TextArrow from '../comps/TextArrow';
+import PCTest2 from '../comps/SVGs/PCTest2';
+import Card from '../comps/Card';
+import PhoneSVG from '../comps/SVGs/PhoneSVG';
+import HouseSVG from '../comps/SVGs/HouseSVG';
+import RepairSVG from '../comps/SVGs/RepairSVG';
 import {
     MainText,
     FirstContainer,
@@ -13,8 +18,12 @@ import {
     ContentArrow,
     ContentText,
     SecondaryText,
+    Seperator,
 } from './styles/HomeScreenStyles';
 import { appendScript } from '../functions/AppendScript';
+import Mail from '../img/Mail.png';
+import Instagram from '../img/Instagram.png';
+import Twitter from '../img/Twitter.png';
 
 class HomeScreen extends Component {
     componentDidMount() {
@@ -26,7 +35,7 @@ class HomeScreen extends Component {
                 <NavBar />
                 <FirstContainer>
                     <MainTextContainer>
-                        <MainText>DIGITALFRAME</MainText>
+                        <MainText>JaCKFyN</MainText>
                         <TextArrow />
                         <div className='console-container'>
                             <SmallText id='text'></SmallText>
@@ -36,37 +45,63 @@ class HomeScreen extends Component {
                         </div>
                     </MainTextContainer>
 
+                    <img
+                        src={Mail}
+                        alt='Mail'
+                        style={{
+                            position: 'absolute',
+                            bottom: 30,
+                            left: 150,
+                            height: 40,
+                        }}
+                    />
+                    <img
+                        src={Instagram}
+                        alt='Instagram'
+                        style={{
+                            position: 'absolute',
+                            bottom: 30,
+                            left: 235,
+                            height: 40,
+                        }}
+                    />
+                    <img
+                        src={Twitter}
+                        alt='Twitter'
+                        style={{
+                            position: 'absolute',
+                            bottom: 30,
+                            left: 300,
+                            height: 45,
+                        }}
+                    />
+
                     <ScrollDown
                         href='#section2'
                         Styles={{ left: 0, bottom: 0 }}
                     />
                     <BackgroundSVG id='BackgroundSVG' />
                 </FirstContainer>
-
                 <UseableContainer id='section2'>
-                    <Content>
-                        <SecondaryText>The Product</SecondaryText>
-                        <ContentText>
-                            The computer building kits were designed to inovate
-                            the current market of over priced pre-built
-                            computers while providing hand picked, qaulity
-                            products to suite the customers needs. The product
-                            allows for customers to design and build their own
-                            computer without having to spend hours doing
-                            essential research into what system to buy or what
-                            parts to pick.
-                        </ContentText>
-                        <ContentText>
-                            With the simplification of the building process and
-                            the detailed instructions provided, the computer
-                            kits are a no-brainer in terms of saving money and
-                            using your time efficienctly.
-                        </ContentText>
-                        <ContentArrow>
-                            <TextArrow />
-                        </ContentArrow>
-                    </Content>
-                    <ScrollDown Styles={{ left: 0, bottom: 0 }} />
+                    {/* <PCTest2 className='pc1' /> */}
+                    <Card
+                        icon={<HouseSVG Style={{ width: 200 }} />}
+                        colour='#47ac35'
+                        name='Home built computers'
+                        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae fringilla nisi velit auctor libero. Donec neque dolor, rhoncus sed posuere ut, ultricies ac arcu. Etiam eget bibendum ipsum.'
+                    />
+                    <Card
+                        icon={<PhoneSVG Style={{ width: 200 }} />}
+                        name='Excellent communication'
+                        colour='#9cd6e6'
+                        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae fringilla nisi velit auctor libero. Donec neque dolor, rhoncus sed posuere ut, ultricies ac arcu. Etiam eget bibendum ipsum.'
+                    />
+                    <Card
+                        icon={<RepairSVG Style={{ width: 200 }} />}
+                        colour='#989899'
+                        name='Repair services'
+                        description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae fringilla nisi velit auctor libero. Donec neque dolor, rhoncus sed posuere ut, ultricies ac arcu. Etiam eget bibendum ipsum.'
+                    />
                 </UseableContainer>
             </>
         );

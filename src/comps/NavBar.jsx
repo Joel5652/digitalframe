@@ -54,12 +54,13 @@ class NavBar extends Component {
                     {/* Desktop Menu - min 1024px */}
                     <DesktopMenu>
                         <NavLink style={{ marginRight: '30px' }}>Home</NavLink>
+                        <NavLink style={{ marginRight: '30px' }}>About</NavLink>
                         {Light ? (
                             <NavLink style={{ marginRight: '30px' }}>
-                                Shop
+                                Services
                             </NavLink>
                         ) : (
-                            <NavLink>Shop</NavLink>
+                            <NavLink>Services</NavLink>
                         )}
                         {Light && <NavLink>Contact</NavLink>}
                     </DesktopMenu>

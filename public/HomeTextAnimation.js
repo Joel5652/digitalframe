@@ -1,4 +1,4 @@
-consoleText(['Simple and easy, designed with efficiency in mind', 'Custom designed, Custom made.'], 'text',['#eee']);
+consoleText(['Finn wants to fuck abi swingler', 'Custom designed, Custom made.'], 'text',['#eee']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];

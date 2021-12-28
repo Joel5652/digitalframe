@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Colours from '../../comps/Colours';
 
 export const MainTextContainer = styled.div`
     margin-top: 14vh;
@@ -47,13 +48,22 @@ export const FirstContainer = styled.section`
     }
 `;
 
+export const Seperator = styled.div`
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    background-color: ${Colours.LightGrey};
+`;
+
 export const UseableContainer = styled.section`
     width: 100%;
     min-height: 100vh;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 30px;
+    position: relative;
 `;
 
 export const Content = styled.div`

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useLayoutEffect } from 'react';
 import { Container, Text } from './styles/TextArrowStyles';
-import StraightArrow from './common/StraightArrow';
+import StraightArrow from './StraightArrow';
 
 function useWindowSize() {
     const [size, setSize] = useState([0, 0]);
