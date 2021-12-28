@@ -35,7 +35,7 @@ class HomeScreen extends Component {
                 <NavBar />
                 <FirstContainer>
                     <MainTextContainer>
-                        <MainText>JaCKFyN</MainText>
+                        <MainText>DIGITALFRAME</MainText>
                         <TextArrow />
                         <div className='console-container'>
                             <SmallText id='text'></SmallText>
